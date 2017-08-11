@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="支持前端项目多分支部署 支持后端项目多分支部署 支持前后端项目自由组合版本 基于IP的免配置版本切换  背景当web产品从简单到复杂，迭代、更新越来越频繁的时候，对于测试人员及开发人员来说都是相当痛苦的一件事。先捋一捋一个bug修复或者一个小功能点迭代的过程（前后端分离项目）：  前端开发人员在代码开发完成后部署应用到测试机 后端开发人员在代码开发完成后部署应用到测试机 前后端通过nginx配置">
+<meta name="description" content="支持前端项目多分支部署 支持后端项目多分支部署 支持前后端项目自由组合版本 基于IP的免配置版本切换">
 <meta name="keywords" content="项目管理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AB测试+发布系统 0-1 实现过程">
 <meta property="og:url" content="http://csudonar.github.io/2017/08/11/mini-publish/index.html">
 <meta property="og:site_name" content="D O N A R">
-<meta property="og:description" content="支持前端项目多分支部署 支持后端项目多分支部署 支持前后端项目自由组合版本 基于IP的免配置版本切换  背景当web产品从简单到复杂，迭代、更新越来越频繁的时候，对于测试人员及开发人员来说都是相当痛苦的一件事。先捋一捋一个bug修复或者一个小功能点迭代的过程（前后端分离项目）：  前端开发人员在代码开发完成后部署应用到测试机 后端开发人员在代码开发完成后部署应用到测试机 前后端通过nginx配置">
+<meta property="og:description" content="支持前端项目多分支部署 支持后端项目多分支部署 支持前后端项目自由组合版本 基于IP的免配置版本切换">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-11T14:02:51.000Z">
+<meta property="og:updated_time" content="2017-08-11T14:03:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AB测试+发布系统 0-1 实现过程">
-<meta name="twitter:description" content="支持前端项目多分支部署 支持后端项目多分支部署 支持前后端项目自由组合版本 基于IP的免配置版本切换  背景当web产品从简单到复杂，迭代、更新越来越频繁的时候，对于测试人员及开发人员来说都是相当痛苦的一件事。先捋一捋一个bug修复或者一个小功能点迭代的过程（前后端分离项目）：  前端开发人员在代码开发完成后部署应用到测试机 后端开发人员在代码开发完成后部署应用到测试机 前后端通过nginx配置">
+<meta name="twitter:description" content="支持前端项目多分支部署 支持后端项目多分支部署 支持前后端项目自由组合版本 基于IP的免配置版本切换">
 
 
 
@@ -414,9 +414,11 @@
 <li>支持前端项目多分支部署</li>
 <li>支持后端项目多分支部署</li>
 <li>支持前后端项目自由组合版本</li>
-<li>基于IP的免配置版本切换</li>
+<li>基于IP的免配置版本切换<a id="more"></a>
+背景</li>
 </ul>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>当web产品从简单到复杂，迭代、更新越来越频繁的时候，对于测试人员及开发人员来说都是相当痛苦的一件事。先捋一捋一个bug修复或者一个小功能点迭代的过程（前后端分离项目）：</p>
+<hr>
+<p>当web产品从简单到复杂，迭代、更新越来越频繁的时候，对于测试人员及开发人员来说都是相当痛苦的一件事。先捋一捋一个bug修复或者一个小功能点迭代的过程（前后端分离项目）：</p>
 <ol>
 <li>前端开发人员在代码开发完成后部署应用到测试机</li>
 <li>后端开发人员在代码开发完成后部署应用到测试机</li>
@@ -590,7 +592,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">2.</span> <span class="nav-text">设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署环境"><span class="nav-number">3.</span> <span class="nav-text">部署环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端部署"><span class="nav-number">4.</span> <span class="nav-text">前端部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后端部署"><span class="nav-number">5.</span> <span class="nav-text">后端部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前后端组合版本"><span class="nav-number">6.</span> <span class="nav-text">前后端组合版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#免配置版本切换"><span class="nav-number">7.</span> <span class="nav-text">免配置版本切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">8.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">1.</span> <span class="nav-text">设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署环境"><span class="nav-number">2.</span> <span class="nav-text">部署环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端部署"><span class="nav-number">3.</span> <span class="nav-text">前端部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后端部署"><span class="nav-number">4.</span> <span class="nav-text">后端部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前后端组合版本"><span class="nav-number">5.</span> <span class="nav-text">前后端组合版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#免配置版本切换"><span class="nav-number">6.</span> <span class="nav-text">免配置版本切换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
