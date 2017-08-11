@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title><![CDATA[WEB灰度测试系统的实现过程]]></title>
+    <url>%2F2017%2F08%2F11%2Fmini-publish%2F</url>
+    <content type="text"><![CDATA[#背景当web产品从简单到复杂，迭代、更新越来越频繁的时候，对于测试人员及开发人员来说都是相当痛苦的一件事。先捋一捋一个bug修复或者一个小功能点迭代的过程（前后端分离项目）： 前端开发人员在代码开发完成后部署应用到测试机 后端开发人员在代码开发完成后部署应用到测试机 前后端通过nginx配置好这个测试项目（不需要每次都配） 测试人员通过绑定host然后到项目下进行测试（不需要每次都配） 下一个功能点测试的时候回到第1步]]></content>
+      <categories>
+        <category>应用</category>
+      </categories>
+      <tags>
+        <tag>项目管理</tag>
+      </tags>
+  </entry>
 </search>
