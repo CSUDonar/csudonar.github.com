@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="blog, donar" />
+  <meta name="keywords" content="tomcat,类加载,java," />
 
 
 
@@ -94,16 +94,18 @@
 
 
 
-<meta name="description" content="Domination Of Netword And Reality">
-<meta property="og:type" content="website">
-<meta property="og:title" content="D O N A R">
-<meta property="og:url" content="http://csudonar.github.io/categories/应用/index.html">
+<meta name="description" content="Tomcat自定义载入器（一般为WebappClassLoader）本地缓存及ClassLoader缓存  Bootstrap class loader载入（在其安全目录内）  Extension class loader载入（在其安全目录内，比如这里为：$JAVA_HOME/jre/lib/ext/*.jar ）  System class loader    （在其安全目录内，比如这里为：C">
+<meta name="keywords" content="tomcat,类加载,java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tomcat运行时类载入或查找顺序">
+<meta property="og:url" content="http://csudonar.github.io/2017/09/13/tomcatclassload/index.html">
 <meta property="og:site_name" content="D O N A R">
-<meta property="og:description" content="Domination Of Netword And Reality">
+<meta property="og:description" content="Tomcat自定义载入器（一般为WebappClassLoader）本地缓存及ClassLoader缓存  Bootstrap class loader载入（在其安全目录内）  Extension class loader载入（在其安全目录内，比如这里为：$JAVA_HOME/jre/lib/ext/*.jar ）  System class loader    （在其安全目录内，比如这里为：C">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-13T06:44:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="D O N A R">
-<meta name="twitter:description" content="Domination Of Netword And Reality">
+<meta name="twitter:title" content="Tomcat运行时类载入或查找顺序">
+<meta name="twitter:description" content="Tomcat自定义载入器（一般为WebappClassLoader）本地缓存及ClassLoader缓存  Bootstrap class loader载入（在其安全目录内）  Extension class loader载入（在其安全目录内，比如这里为：$JAVA_HOME/jre/lib/ext/*.jar ）  System class loader    （在其安全目录内，比如这里为：C">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://csudonar.github.io/categories/应用/"/>
+  <link rel="canonical" href="http://csudonar.github.io/2017/09/13/tomcatclassload/"/>
 
 
 
 
 
-  <title>分类: 应用 | D O N A R</title>
+  <title>Tomcat运行时类载入或查找顺序 | D O N A R</title>
   
 
 
@@ -167,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -305,55 +307,205 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>应用<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://csudonar.github.io/2017/09/13/tomcatclassload/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Donar">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ougoojsj5.bkt.clouddn.com/avatar.jpg?imageMogr2/thumbnail/!100p">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="D O N A R">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/08/11/mini-publish/" itemprop="url">
-              
-                <span itemprop="name">AB测试+发布系统 0-1 实现过程</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Tomcat运行时类载入或查找顺序</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-11T21:50:14+08:00"
-              content="2017-08-11" >
-          08-11
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-13T14:44:48+08:00">
+                2017-09-13
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li>Tomcat自定义载入器（一般为WebappClassLoader）本地缓存及ClassLoader缓存 </li>
+<li>Bootstrap class loader载入（在其安全目录内） </li>
+<li>Extension class loader载入（在其安全目录内，比如这里为：$JAVA_HOME/jre/lib/ext/*.jar ） </li>
+<li>System class loader    （在其安全目录内，比如这里为：CLASSPATH/）<br>注意：以上要优先主要是基于安全，避免类似自定义java.lang.Object优先于JDK的java.lang.Object被加载 </li>
+<li>/WEB-INF/classes/*.class    </li>
+<li>/WEB-INF/lib/*.jar    这里面按包名的字典顺序去加载</li>
+<li>$CATALINA_HOME/common/classes     </li>
+<li>$CATALINA_HOME/common/endorsed/*.jar     </li>
+<li>$CATALINA_HOME/common/i18n/*.jar     </li>
+<li>$CATALINA_HOME/common/lib/*.jar     </li>
+<li>$CATALINA_BASE/shared/classes     </li>
+<li>$CATALINA_BASE/shared/lib/*.jar</li>
+</ul>
+<a id="more"></a>
+<p>由于类加载器对于同名(包括包路径)的类只会加载一次所以我们可以采取些手段去改变一个类的行为</p>
+<p>比如我们想做这么一件事 在ibatis 启动的时候我们需要检查一下sqlmap 中是不是存在注入的风险 </p>
+<ul>
+<li>首先我们可以重写com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate 的 addMappedStatement方法 用正则去匹配可能存在注入风险的sql如果存在则抛异常。当然这只是最原始最野蛮的一个办法</li>
+<li>其次我们可以将这个类单独放在一个jar包里 为了达到优先加载的目的 我们可以将jar包的名字以 _ 开头 这样就可先于 ibatis jar包里面原来的类加载</li>
+<li>同样是这样的jar我们可以放到更前一步 比如$JAVA_HOME/jre/lib/ext 目录下</li>
+<li>甚至我们可以使用java agent 通过jdk 的 Instrumentation 配合asm完成，当然这个就要求开发人员对 class 文件结构有一定的了解</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tomcat/" rel="tag"># tomcat</a>
+          
+            <a href="/tags/类加载/" rel="tag"># 类加载</a>
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/11/mini-publish/" rel="next" title="AB测试+发布系统 0-1 实现过程">
+                <i class="fa fa-chevron-left"></i> AB测试+发布系统 0-1 实现过程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -361,6 +513,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -563,10 +719,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -945,6 +1101,23 @@
 
 
   
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 6594,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
 
