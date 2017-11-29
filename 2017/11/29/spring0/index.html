@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="blog, donar" />
+  <meta name="keywords" content="spring,schema," />
 
 
 
@@ -94,16 +94,18 @@
 
 
 
-<meta name="description" content="Domination Of Netword And Reality">
-<meta property="og:type" content="website">
-<meta property="og:title" content="D O N A R">
-<meta property="og:url" content="http://csudonar.github.io/tags/java/index.html">
+<meta name="description" content="如果我想在spring中使用下面一段自定义配置来实例化一个池    那么需要如下几步">
+<meta name="keywords" content="spring,schema">
+<meta property="og:type" content="article">
+<meta property="og:title" content="spring 拾遗 0x00 如何在spring xml配置中使用自己的schema">
+<meta property="og:url" content="http://csudonar.github.io/2017/11/29/spring0/index.html">
 <meta property="og:site_name" content="D O N A R">
-<meta property="og:description" content="Domination Of Netword And Reality">
+<meta property="og:description" content="如果我想在spring中使用下面一段自定义配置来实例化一个池    那么需要如下几步">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-29T03:00:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="D O N A R">
-<meta name="twitter:description" content="Domination Of Netword And Reality">
+<meta name="twitter:title" content="spring 拾遗 0x00 如何在spring xml配置中使用自己的schema">
+<meta name="twitter:description" content="如果我想在spring中使用下面一段自定义配置来实例化一个池    那么需要如下几步">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://csudonar.github.io/tags/java/"/>
+  <link rel="canonical" href="http://csudonar.github.io/2017/11/29/spring0/"/>
 
 
 
 
 
-  <title>标签: java | D O N A R</title>
+  <title>spring 拾遗 0x00 如何在spring xml配置中使用自己的schema | D O N A R</title>
   
 
 
@@ -167,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -305,54 +307,203 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>java<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://csudonar.github.io/2017/11/29/spring0/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Donar">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ougoojsj5.bkt.clouddn.com/avatar.jpg?imageMogr2/thumbnail/!100p">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="D O N A R">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/09/13/tomcatclassload/" itemprop="url">
-              
-                <span itemprop="name">Tomcat运行时类载入或查找顺序</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">spring 拾遗 0x00 如何在spring xml配置中使用自己的schema</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-13T14:44:48+08:00"
-              content="2017-09-13" >
-          09-13
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T11:00:28+08:00">
+                2017-11-29
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/spring/" itemprop="url" rel="index">
+                    <span itemprop="name">spring</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>如果我想在spring中使用下面一段自定义配置来实例化一个池<br>    <donar:pool poolsize="50" name="mypool" id="mypool"><br>那么需要如下几步<br><a id="more"></a></donar:pool></p>
+<p>#Step 1 定义 xsd</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;</div><div class="line">&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;</div><div class="line">            xmlns:beans=&quot;http://www.springframework.org/schema/beans&quot;</div><div class="line">            xmlns:tool=&quot;http://www.springframework.org/schema/tool&quot;</div><div class="line">            xmlns=&quot;http://code.raycloud.com/schema/donar&quot;</div><div class="line">            targetNamespace=&quot;http://code.raycloud.com/schema/donar&quot;&gt; &lt;!--这里是命名空间--&gt;</div><div class="line">    &lt;xsd:import namespace=&quot;http://www.springframework.org/schema/beans&quot; /&gt;</div><div class="line">    &lt;xsd:import namespace=&quot;http://www.springframework.org/schema/tool&quot; /&gt;</div><div class="line"></div><div class="line"></div><div class="line">    &lt;xsd:element name=&quot;pool&quot;&gt;</div><div class="line">        &lt;xsd:complexType&gt;</div><div class="line">            &lt;xsd:complexContent&gt;</div><div class="line">                &lt;xsd:extension base=&quot;beans:identifiedType&quot;&gt;</div><div class="line">                    &lt;xsd:attribute name=&quot;name&quot; type=&quot;xsd:string&quot;&gt;</div><div class="line">                        &lt;xsd:annotation&gt;</div><div class="line">                            &lt;xsd:documentation&gt;名称&lt;/xsd:documentation&gt;</div><div class="line">                        &lt;/xsd:annotation&gt;</div><div class="line">                    &lt;/xsd:attribute&gt;</div><div class="line">                    &lt;xsd:attribute name=&quot;poolSize&quot; type=&quot;xsd:int&quot;&gt;</div><div class="line">                        &lt;xsd:annotation&gt;</div><div class="line">                            &lt;xsd:documentation&gt;池大小&lt;/xsd:documentation&gt;</div><div class="line">                        &lt;/xsd:annotation&gt;</div><div class="line">                    &lt;/xsd:attribute&gt;</div><div class="line">                &lt;/xsd:extension&gt;</div><div class="line">            &lt;/xsd:complexContent&gt;</div><div class="line">        &lt;/xsd:complexType&gt;</div><div class="line">    &lt;/xsd:element&gt;</div><div class="line">&lt;/xsd:schema&gt;</div></pre></td></tr></table></figure>
+<p>#Step 2 解析xml配置</p>
+<ul>
+<li>定义命名空间处理类</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">package com.donar.spring;</div><div class="line"></div><div class="line">import org.springframework.beans.factory.xml.NamespaceHandlerSupport;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created by donar on 17/11/27.</div><div class="line"> * 命名空间处理类  继承NamespaceHandlerSupport 在init方法中注册 pool 元素的解析类</div><div class="line"> */</div><div class="line">public class DonarNameSpaceHandler extends NamespaceHandlerSupport&#123;</div><div class="line">    @Override</div><div class="line">    public void init() &#123;</div><div class="line">        registerBeanDefinitionParser(&quot;pool&quot;,new PoolBeanDefinitionParser());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>解析类</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">package com.donar.spring.bean;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created by donar on 17/11/27.</div><div class="line"> */</div><div class="line">public class Pool &#123;</div><div class="line">    Integer poolSize;</div><div class="line">    String name;</div><div class="line"></div><div class="line">    public Integer getPoolSize() &#123;</div><div class="line">        return poolSize;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setPoolSize(Integer poolSize) &#123;</div><div class="line">        this.poolSize = poolSize;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public String getName() &#123;</div><div class="line">        return name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setName(String name) &#123;</div><div class="line">        this.name = name;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">package com.donar.spring;</div><div class="line"></div><div class="line">import com.donar.spring.bean.Pool;</div><div class="line">import org.springframework.beans.factory.support.BeanDefinitionBuilder;</div><div class="line">import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;</div><div class="line">import org.w3c.dom.Element;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created by donar on 17/11/27.</div><div class="line"> */</div><div class="line">public class PoolBeanDefinitionParser extends AbstractSingleBeanDefinitionParser&#123;</div><div class="line">    @Override</div><div class="line">    protected Class&lt;?&gt; getBeanClass(Element element) &#123;</div><div class="line">        return Pool.class;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void doParse(Element element, BeanDefinitionBuilder builder) &#123;</div><div class="line">        String name = element.getAttribute(&quot;name&quot;);</div><div class="line">        Integer size = Integer.valueOf(element.getAttribute(&quot;poolSize&quot;));</div><div class="line">        builder.addPropertyValue(&quot;name&quot;,name);</div><div class="line">        builder.addPropertyValue(&quot;poolSize&quot;,size);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>#Step 3 添加spring资源文件</p>
+<ul>
+<li>spring.handler  用来配置解析命名空间时对应的处理类<br>  http\://code.raycloud.com/schema/donar=com.donar.spring.DonarNameSpaceHandler</li>
+<li>spring.schemas<br>   http\://code.raycloud.com/schema/donar/donar.xsd=META-INF/donar.xsd</li>
+</ul>
+<p>完成这几步后我们在spring中配置中引用我们的xsd文件 就可以在spring加载bean的时候把我们自己命名空间的标签也纳入其中了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</div><div class="line">&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;</div><div class="line">       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</div><div class="line">       xmlns:donar=&quot;http://code.raycloud.com/schema/donar&quot;</div><div class="line">       xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans</div><div class="line">    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd</div><div class="line">    http://code.raycloud.com/schema/donar</div><div class="line">    http://code.raycloud.com/schema/donar/donar.xsd&quot;&gt;</div><div class="line"></div><div class="line">    &lt;donar:pool poolSize=&quot;50&quot; name=&quot;mypool&quot; id=&quot;mypool&quot;/&gt;</div><div class="line">      </div><div class="line">&lt;/beans&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">import com.donar.spring.bean.Pool;</div><div class="line">import org.junit.Test;</div><div class="line">import org.springframework.context.support.ClassPathXmlApplicationContext;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created by donar on 17/11/27.</div><div class="line"> */</div><div class="line">public class TestSpringSchema &#123;</div><div class="line">    @Test</div><div class="line">    public void test()&#123;</div><div class="line">        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(&quot;classpath:applicationContext.xml&quot;);</div><div class="line">        Pool pool = (Pool) context.getBean(&quot;mypool&quot;);</div><div class="line">        System.out.println(pool.getName() + &quot;---&quot; + pool.getPoolSize());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mypool---50</div></pre></td></tr></table></figure>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/spring/" rel="tag"># spring</a>
+          
+            <a href="/tags/schema/" rel="tag"># schema</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/13/tomcatclassload/" rel="next" title="Tomcat运行时类载入或查找顺序">
+                <i class="fa fa-chevron-left"></i> Tomcat运行时类载入或查找顺序
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -360,6 +511,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -562,10 +717,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -944,6 +1099,23 @@
 
 
   
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 6594,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
 
